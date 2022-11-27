@@ -1,7 +1,7 @@
 import copy
 
 from ray import tune
-from ray.rllib.agents import dqn
+from ray.rllib.algorithms import dqn
 from ray.tune import register_env
 
 from snake.agent.utils import env_creator
