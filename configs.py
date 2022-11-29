@@ -20,7 +20,7 @@ ENV_CONFIG = {
 CONFIG = {
   'env': 'snake_env',
   'num_gpus': 0,
-  'num_cpus':6
+  'num_cpus':2,
   'num_workers': 1,
   'framework': 'torch',
   'seed': RANDOM_SEED,
