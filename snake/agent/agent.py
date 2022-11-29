@@ -26,7 +26,7 @@ def play(checkpoint_path, config):
   play_config = copy.deepcopy(config)
   play_config['num_gpus'] = 0
   play_config['num_workers'] = 0
-  agent = dqn.DQNTrainer(config=play_config)
+  agent = dqn.DQN(config=play_config)
   agent.restore(checkpoint_path)
   env_config = copy.deepcopy(play_config['env_config'])
   env_config['show'] = True
